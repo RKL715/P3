@@ -61,18 +61,26 @@ a {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  padding-right: 0px;
+  align-items: flex-start;
+  gap: 946px;
+  align-self: stretch;
 }
 
 .logo {
+  display: flex;
+  padding: 30px 50px 30px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 .NavButton {
   display: flex;
-  padding-right: 10%;
+  padding-right: 25px;
   flex-direction: row;
   align-items: center;
-  gap: 42.5%;
+  gap: 68px;
 }
 
 a[title]:hover {
@@ -81,24 +89,112 @@ a[title]:hover {
 
 /****** SEARCH & FILTER ********/
 
+.searchandfilter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+  align-self: stretch;
+}
+
 /*search*/
-.search {
+
+.barsearch {
+  margin-top: 35px;
+  display: flex;
+  width: 377px;
+  height: 49px;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid var(--Grey, #f2f2f2);
+  background: var(--White, #fff);
+}
+
+.barsearch i {
+  color: black;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 15px 0px 0px 15px;
+  flex-shrink: 0;
+  width: 50px;
+  height: 49px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.barsearch input {
+  display: flex;
+  width: 377px;
+  height: 49px;
+  align-items: center;
+  border: none;
+}
+
+.barsearch :placeholder-shown {
+  color: var(--Black, #000);
+  text-align: center;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.barsearch button {
+  display: flex;
+  height: 49px;
+  padding: 15px 16px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 0px 15px 15px 0px;
+  border: 1px solid var(--Blue, #0065fc);
+  background: var(--Blue, #0065fc);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 /*filter*/
 .filter-group {
-  list-style: none;
   display: flex;
   align-items: center;
-  gap: 5px;
+  height: 50px;
+}
+
+.filterbutton {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  height: 50px;
+}
+
+.titlefiltre {
+  color: #000;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  gap: 15px;
 }
 
 .filter {
+  display: flex;
+  height: 50px;
+  padding: 4px 19px;
+  align-items: center;
+  gap: 10px;
   border-radius: 25px;
   border: 2px solid var(--grey-tint-2, #d9d9d9);
-  background-color: transparent;
-  padding: 4px 19px;
-  margin-left: 15px;
+  color: var(--Black, #000);
+  font-family: Raleway;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: #fff;
 }
 
 .filter:hover {
@@ -133,9 +229,13 @@ i.fa-solid.fa-info {
 .hebergements-title {
 }
 
-.hebergements-cards .cards {
+.hebergements-cards {
   display: flex;
-  margin-top: 33px;
+  padding-bottom: 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  flex: 1 0 0;
 }
 
 .hebergements-cards img {
