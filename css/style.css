@@ -59,7 +59,7 @@ a {
 }
 /******HEADER***********/
 
-.header {
+header {
   display: flex;
   padding-right: 0px;
   align-items: flex-start;
@@ -75,7 +75,7 @@ a {
   gap: 10px;
 }
 
-.NavButton {
+nav {
   display: flex;
   padding-right: 25px;
   flex-direction: row;
@@ -87,13 +87,16 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-top: -7.6px;
+}
+
+a[title] {
+  padding-top: 14px;
+  border-top: solid 2px rgba(0, 0, 0, 0);
 }
 
 a[title]:hover {
-  /*border-top: solid 2px #0065fc;*/
-  text-decoration: overline;
-  text-decoration-color: #0065fc;
-  text-decoration-thickness: 2px;
+  border-top: solid 2px #0065fc;
 }
 
 /****** SEARCH & FILTER ********/
@@ -238,11 +241,11 @@ i.fa-solid.fa-info {
 }
 
 /****** Hebergements ***********/
-.hebergements {
-  width: 65%;
+
+#hebergements {
+  width: 68%;
   display: flex;
   flex-direction: column;
-  gap: 30px;
   justify-content: center;
 }
 
@@ -251,10 +254,12 @@ i.fa-solid.fa-info {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 30px;
+  padding-top: 30px;
+  width: calc(100% - 120px);
 }
 
 .hebergements-cards .card {
-  width: 250px;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -263,7 +268,7 @@ i.fa-solid.fa-info {
 .hebergements-cards img {
   width: 100%;
   height: 124px;
-  /*  align-self: stretch;*/
+  align-self: stretch;
   border-radius: 20px 20px 0px 0px;
   object-fit: fill;
 }
@@ -332,11 +337,42 @@ i.fa-solid.fa-info {
 
 /***** Activités ***********/
 
-.activites {
-  background-color: var(--main-bg-color);
+#activites {
   border-radius: 20px;
   padding: 30px;
   box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.activites-cards {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+  align-self: stretch;
+  justify-content: flex-start;
+}
+.activites-cards .card {
+  display: flex;
+  height: 439px;
+  width: 297.5px;
+  flex-direction: column;
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.activites-cards img {
+  width: auto;
+  height: 87%;
+  align-self: stretch;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.activites-cards .card-content {
+  align-self: stretch;
+  padding: 0px 19px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */

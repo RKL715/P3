@@ -23,11 +23,11 @@
 <body>
     <!--HEADER-->
     <div class="main-container">
-        <header class="header">
+        <header>
             <div class="logo"><a href="index.html"><img src="images/logo/Booki.png" alt="logo Booki" height="30"
                         width="100"></a></div>
-            <nav class="NavButton">
-                <a href="#herbegement" title="hebergements">Hébergements</a>
+            <nav>
+                <a href="#hebergements" title="hebergements">Hébergements</a>
                 <a href="#activites" title="Activites">Activités</a>
             </nav>
         </header>
@@ -63,13 +63,13 @@
         <div class="hebergements-and-populaires">
 
             <!--HEBERGEMENT-->
-            <section class="hebergements">
+            <section id="hebergements">
                 <div class="hebergements-title">
                     <h2 class="section-title">Hébergements à Marseille</h2>
                 </div>
                 <div class="hebergements-cards">
-                    <a href="#">
-                        <div class="card">
+                    <article href="#">
+                        <article class="card">
                             <img src="images/hebergements/fred-kleber.jpg" alt="Chambre avec lits jumeaux" width="100%">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -85,8 +85,8 @@
                                     <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </article>
+                    </article>
                     <a href="#">
                         <article class="card">
                             <img src="images/hebergements/febrian-zakaria.jpg" alt="Grande chambre avec lits jumeaux"
@@ -188,7 +188,6 @@
                                 </div>
                             </div>
                         </article>
-
                     </a>
                 </div>
             </section>
@@ -265,8 +264,51 @@
             <!--END ASIDE POPULAIRE-->
         </div>
         <!--ACTIVITES-->
-        <section class="activites">
+        <section id="activites">
             <h2 class="section-title">Activités à Marseille</h2>
+            <div class="activites-cards">
+                <a href="#">
+                    <article class="card">
+                        <img src="images/activites/reno-laithienne.jpg" ; alt="Image d'un port de plaisance">
+                        <div class="card-content">
+                            <div class="card-txt">
+                                <h3 class="card-title">Vieux-Port</h3>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="card">
+                        <img src="images/activites/paul-hermann.jpg" ; alt="Image d'un fort au milieu des rochers">
+                        <div class="card-content">
+                            <div class="card-txt">
+                                <h3 class="card-title">Fort de Pomègues</h3>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="card">
+                        <img src="images/activites/kilyan-sockalingum.jpg" ; alt="Image de falaises en bord de mer">
+                        <div class="card-content">
+                            <div class="card-txt">
+                                <h3 class="card-title">Parc national des Calanques</h3>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="card">
+                        <img src="images/activites/florian-wehde.jpg" ;
+                            alt="Image d'une église sur une montagne surplombant la ville">
+                        <div class="card-content">
+                            <div class="card-txt">
+                                <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+            </div>
         </section>
 
         </main>
