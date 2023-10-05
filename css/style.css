@@ -57,6 +57,7 @@ a {
 .neutral-star {
   color: var(--main-bg-color);
 }
+
 /******HEADER***********/
 
 header {
@@ -81,7 +82,6 @@ nav {
   flex-direction: row;
   align-items: center;
   gap: 68px;
-  color: var(--Blue, #0065fc);
   font-family: Raleway;
   font-size: 16px;
   font-style: normal;
@@ -97,11 +97,12 @@ a[title] {
 
 a[title]:hover {
   border-top: solid 2px #0065fc;
+  color: var(--Blue, #0065fc);
 }
 
 /****** SEARCH & FILTER ********/
 
-.searchandfilter {
+.search-and-filter {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -109,13 +110,13 @@ a[title]:hover {
   align-self: stretch;
 }
 
-.searchzone h1 {
+.search-zone h1 {
   margin-bottom: 8px;
 }
 
 /*search*/
 
-.barsearch {
+.bar-search {
   margin-top: 35px;
   display: flex;
   width: 377px;
@@ -126,7 +127,7 @@ a[title]:hover {
   background: var(--White, #fff);
 }
 
-.barsearch i {
+.bar-search i {
   color: black;
   background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
@@ -139,7 +140,7 @@ a[title]:hover {
   align-items: center;
 }
 
-.barsearch input {
+.bar-search input {
   display: flex;
   width: 377px;
   height: 49px;
@@ -147,7 +148,7 @@ a[title]:hover {
   border: none;
 }
 
-.barsearch :placeholder-shown {
+.bar-search :placeholder-shown {
   color: var(--Black, #000);
   text-align: center;
   font-family: Raleway;
@@ -157,7 +158,7 @@ a[title]:hover {
   line-height: normal;
 }
 
-.barsearch button {
+.bar-search button {
   display: flex;
   height: 49px;
   padding: 15px 16px;
@@ -179,14 +180,14 @@ a[title]:hover {
   height: 50px;
 }
 
-.filterbutton {
+.filter-button {
   list-style: none;
   display: flex;
   gap: 15px;
   height: 50px;
 }
 
-.titlefiltre {
+.title-filtre {
   color: #000;
   text-align: center;
   font-family: Raleway;
@@ -240,40 +241,36 @@ i.fa-solid.fa-info {
   box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/********* Hebergements ***********/
 
 #hebergements {
-  width: 68%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: 65%;
 }
 
 .hebergements-cards {
+  gap: 30px;
+  padding-top: 30px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 30px;
-  padding-top: 30px;
-  width: calc(100% - 120px);
+  justify-content: space-around;
 }
 
 .hebergements-cards .card {
   width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
+  margin: 5%;
 }
 
 .hebergements-cards img {
-  width: 100%;
-  height: 124px;
   align-self: stretch;
   border-radius: 20px 20px 0px 0px;
-  object-fit: fill;
+  object-fit: cover;
+  height: 126px;
+  width: 100%;
 }
 
 .hebergements-cards .card-content {
+  max-width: 100%;
   padding-left: 15px;
   display: flex;
   flex-direction: column;
@@ -361,6 +358,7 @@ i.fa-solid.fa-info {
   width: 297.5px;
   flex-direction: column;
   box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+  padding: 0px;
 }
 
 .activites-cards img {
@@ -373,6 +371,37 @@ i.fa-solid.fa-info {
 .activites-cards .card-content {
   align-self: stretch;
   padding: 0px 19px;
+}
+
+/********* FOOTER ********/
+
+footer {
+  background: var(--Grey, #f2f2f2);
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-column {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  flex: 1 0 0;
+  text-align: start;
+}
+
+footer h3 {
+  margin-bottom: 0;
+}
+
+footer li {
+  list-style: none;
+  display: flex;
+  padding-bottom: 15px;
+  margin-left: -40px;
+}
+
+footer a:hover {
+  font-weight: 500;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
