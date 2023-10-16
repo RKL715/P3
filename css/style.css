@@ -75,19 +75,21 @@ header {
 }
 nav {
   float: right;
-  padding: 20px;
+  padding-right: 20px;
   display: flex;
   gap: 10%;
 }
 
 a[title] {
-  padding-top: 10px;
+  padding-top: 1px;
   border-top: solid 2px rgba(0, 0, 0, 0);
+  line-height: 3;
 }
 
 a[title]:hover {
   border-top: solid 2px #0065fc;
   color: var(--Blue, #0065fc);
+  padding-top: 0px;
 }
 
 /****** SEARCH & FILTER ********/
@@ -174,30 +176,32 @@ a[title]:hover {
 
 /*** FILTER ***/
 
-.Filter-All {
+.Filter-Zone {
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
-.filter-button {
-  list-style: none;
+.Filter-Main {
   display: flex;
+}
+
+.Filter-Main h3 {
+  padding-right: 2%;
+}
+
+.Filter-Buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   gap: 15px;
 }
 
-.title-filtre {
-  color: #000;
-  text-align: center;
-  font-family: Raleway;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+.Filter-Two-Buttons {
+  display: flex;
   gap: 15px;
 }
 
 .filter {
-  display: flex;
   height: 50px;
   padding: 4px 19px;
   align-items: center;
@@ -219,11 +223,6 @@ a[title]:hover {
 }
 
 /** TEXT **/
-
-.resultats {
-  display: flex;
-  flex-direction: column;
-}
 
 i.fa-solid.fa-info {
   border: 2px solid #d9d9d9;
@@ -281,13 +280,11 @@ i.fa-solid.fa-info {
 }
 
 .hebergements-cards .card-title {
-  margin-top: 10px;
-  margin-bottom: -5px;
+  margin-top: 3%;
 }
 
 .hebergements-cards .card-rating {
-  margin-top: -5px;
-  padding-bottom: 15px;
+  padding-bottom: 5%;
 }
 
 /****** Populaires ***********/
@@ -412,7 +409,8 @@ footer a:hover {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-  .Filter-All {
+  .Filter-Main {
+    flex-direction: column;
   }
 
   .hebergements-and-populaires {
@@ -495,8 +493,15 @@ footer a:hover {
     display: block;
   }
 
-  .Filter-All {
+  .Filter-Two-Buttons {
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .filter-button {
+    width: 100%;
   }
 
   .main-container {
@@ -523,8 +528,22 @@ footer a:hover {
     background-color: #fff;
   }
 
+  .hebergements-cards .card-content {
+    margin-top: 0%;
+    line-height: 0.5;
+  }
+
   .activites-cards {
     flex-direction: column;
+  }
+
+  .activites-cards .card img {
+    height: 141px;
+  }
+
+  .activites-cards .card-content {
+    height: 59px;
+    display: flex;
   }
 
   footer {
