@@ -89,15 +89,21 @@ a[title] {
 a[title]:hover {
   border-top: solid 2px #0065fc;
   color: var(--Blue, #0065fc);
-  padding-top: 0px;
+  padding-top: 1px;
+}
+
+/***** MAIN *******/
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 /****** SEARCH & FILTER ********/
 
-.search-and-filter {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
+.Search-And-Filter {
+  width: 100%;
 }
 
 .search-zone h1 {
@@ -110,6 +116,7 @@ a[title]:hover {
   margin-top: 3%;
   display: flex;
   width: 20rem;
+  margin-bottom: 2%;
 }
 
 #map {
@@ -480,9 +487,11 @@ footer a:hover {
   .search-zone {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 8px;
-    align-self: stretch;
+  }
+
+  .bar-search {
+    padding-left: 5%;
   }
 
   #rechercher {

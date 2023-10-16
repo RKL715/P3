@@ -3,12 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <!--FONT&ICONS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/aaeba219f2.js" crossorigin="anonymous"></script>
-    <!--ENDFONT&ICONS-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booki</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,42 +30,43 @@
         </header>
 
         <!--MAIN-->
-        <main class="search-and-filter">
-            <!--Search Zone-->
-            <section class="search-zone">
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
-                <!--search bar-->
-                <form action="#" method="get" class="bar-search">
-                    <i id="map" class="fa-solid fa-location-dot"></i>
-                    <label for="search"></label>
-                    <input type="search" id="search" name="search" placeholder="Marseille, France">
-                    <button type="submit" id="rechercher">Rechercher</button>
-                    <button type="submit" id="glass" name="glass"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-            </section>
-            <!--filter-->
-
-
-            <section class="Filter-Zone">
-                <div class="Filter-Main">
-                    <h3>Filtres</h3>
-                    <div class="Filter-Buttons">
-                        <div class="Filter-Two-Buttons">
-                            <button class="filter"><i class="fa-solid fa-money-bill-wave"></i> Économique</button>
-                            <button class="filter"> <i class="fa-solid fa-person"></i> Familiale</button>
-                        </div>
-                        <div class="Filter-Two-Buttons">
-                            <button class="filter"><i class="fa-solid fa-heart"></i> Romantique</button>
-                            <button class="filter"><i class="fa-solid fa-fire"></i> Nos pépites</button>
+        <main>
+            <section class="Search-And-Filter">
+                <!--SEARCH ZONE-->
+                <article class="search-zone">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre ville ou en pleine nature</p>
+                    <!--SEARCH BAR-->
+                    <form action="#" method="get" class="bar-search">
+                        <i id="map" class="fa-solid fa-location-dot"></i>
+                        <label for="search"></label>
+                        <input type="search" id="search" name="search" placeholder="Marseille, France">
+                        <button type="submit" id="rechercher">Rechercher</button>
+                        <button type="submit" id="glass" name="glass"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </article>
+                <!--FILTERS-->
+                <article class="Filter-Zone">
+                    <div class="Filter-Main">
+                        <h3>Filtres</h3>
+                        <div class="Filter-Buttons">
+                            <div class="Filter-Two-Buttons">
+                                <button class="filter"><i class="fa-solid fa-money-bill-wave"></i> Économique</button>
+                                <button class="filter"> <i class="fa-solid fa-person"></i> Familiale</button>
+                            </div>
+                            <div class="Filter-Two-Buttons">
+                                <button class="filter"><i class="fa-solid fa-heart"></i> Romantique</button>
+                                <button class="filter"><i class="fa-solid fa-fire"></i> Nos pépites</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="resultats">
-                    <p><i class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
-                </div>
+                    <div class="resultats">
+                        <p><i class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+                    </div>
+                </article>
             </section>
-
+            <!--HERBERGEMENTS AND POPULAIRES-->
             <div class="hebergements-and-populaires">
                 <!--HEBERGEMENT-->
                 <section id="hebergements">
@@ -75,6 +74,7 @@
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
                     <div class="hebergements-cards">
+                        <!--Card-1-->
                         <article class="card">
                             <a href="#">
                                 <img src="images/hebergements/fred-kleber.jpg" alt="Chambre avec lits jumeaux">
@@ -94,7 +94,7 @@
                                 </div>
                         </article>
                         </a>
-
+                        <!--Card-2-->
                         <article class="card">
                             <a href="#">
                                 <img src="images/hebergements/febrian-zakaria.jpg"
@@ -115,7 +115,7 @@
                                 </div>
                         </article>
                         </a>
-
+                        <!--Card-3-->
                         <article class="card">
                             <a href="#">
                                 <img src="images/hebergements/reisetopia.jpg" alt="Chambre avec lit une place">
@@ -134,9 +134,8 @@
                                     </div>
                                 </div>
                         </article>
-
                         </a>
-
+                        <!--Card-4-->
                         <article class="card">
                             <a href="#">
                                 <img src="images/hebergements/annie-spratt.jpg" alt="Chambre avec lits double">
@@ -155,9 +154,8 @@
                                     </div>
                                 </div>
                         </article>
-
                         </a>
-
+                        <!--Card-5-->
                         <article class="card">
                             <a href="#">
                                 <img src="images/hebergements/marcus-loke.jpg" alt="Chambre avec lits superposés">
@@ -176,9 +174,8 @@
                                     </div>
                                 </div>
                         </article>
-
                         </a>
-
+                        <!--Card-6-->
                         <article class="card">
                             <a href="#">
                                 <img src="images/hebergements/nicate-lee.jpg" alt="Chambre avec 2 lits superposés">
@@ -209,6 +206,7 @@
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
                     <div class="populaires-cards">
+                        <!--Card-B1-->
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/emile-guillemot.jpg"
@@ -229,6 +227,7 @@
                                 </div>
                             </article>
                         </a>
+                        <!--Card-B2-->
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/aw-creative.jpg"
@@ -249,6 +248,7 @@
                                 </div>
                             </article>
                         </a>
+                        <!--Card-B3-->
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/febrian-zakaria2.jpg"
@@ -271,12 +271,13 @@
                         </a>
                     </div>
                 </section>
-                <!--END ASIDE POPULAIRE-->
+                <!--END-POPULAIRE-->
             </div>
             <!--ACTIVITES-->
             <section id="activites">
                 <h2 class="section-title">Activités à Marseille</h2>
                 <div class="activites-cards">
+                    <!--CARD-C1-->
                     <article class="card">
                         <a href="#">
                             <img src="images/activites/reno-laithienne.jpg" alt="Image d'un port de plaisance">
@@ -287,6 +288,7 @@
                             </div>
                     </article>
                     </a>
+                    <!--CARD-C2-->
                     <article class="card">
                         <a href="#">
                             <img src="images/activites/paul-hermann.jpg" alt="Image d'un fort au milieu des rochers">
@@ -297,6 +299,7 @@
                             </div>
                     </article>
                     </a>
+                    <!--CARD-C3-->
                     <article class="card">
                         <a href="#">
                             <img src="images/activites/kilyan-sockalingum.jpg" alt="Image de falaises en bord de mer">
@@ -307,6 +310,7 @@
                             </div>
                     </article>
                     </a>
+                    <!--CARD-C4-->
                     <article class="card">
                         <a href="#">
                             <img src="images/activites/florian-wehde.jpg"
@@ -321,9 +325,7 @@
                 </div>
             </section>
         </main>
-
         <!--FOOTER-->
-
         <footer>
             <div class="footer-column">
                 <h3 class="a-propos">À propos</h3>
@@ -348,9 +350,7 @@
                 </ul>
             </div>
         </footer>
-
     </div>
 </body>
-
 
 </html>
