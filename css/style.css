@@ -194,7 +194,6 @@ main {
 .Filter-Buttons {
   display: flex;
   flex-direction: row;
-  align-items: center;
   gap: 15px;
   width: 100%;
 }
@@ -507,12 +506,8 @@ footer a:hover {
   }
 
   .Filter-Two-Buttons {
-    flex-direction: column;
-    justify-content: space-between;
     margin-bottom: 5%;
-  }
-
-  .filter-button {
+    flex-direction: column;
     width: 100%;
   }
 
