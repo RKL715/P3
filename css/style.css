@@ -128,7 +128,6 @@ main {
   display: none;
   height: 48px;
   padding: 15px 16px;
-  margin-left: 0px;
   border-radius: 15px;
   border: 1px solid var(--Blue, #0065fc);
   background: var(--Blue, #0065fc);
@@ -486,9 +485,12 @@ footer a:hover {
   /* SEARCH ZONE */
 
   .bar-search {
-    width: 100%;
+    width: 95%;
+    position: relative;
   }
-
+  .bar-search input {
+    padding-right: 15px;
+  }
   .Search-And-Filter {
     display: flex;
     flex-direction: column;
@@ -507,7 +509,8 @@ footer a:hover {
 
   #glass {
     display: block;
-    margin-left: 0;
+    position: absolute;
+    margin-left: 90%;
   }
 
   .Filter-Two-Buttons {
@@ -556,6 +559,8 @@ footer a:hover {
     height: 59px;
     display: flex;
   }
+
+  /******* FOOTER *******/
 
   footer {
     display: flex;
