@@ -107,7 +107,7 @@ main {
 .bar-search {
   margin-top: 3%;
   display: flex;
-  width: 377px;
+  width: 30%;
   margin-bottom: 2%;
 }
 
@@ -464,6 +464,7 @@ footer a:hover {
   }
 
   .logo {
+    padding-left: 10%;
     display: flex;
     justify-content: center;
   }
@@ -483,6 +484,10 @@ footer a:hover {
   }
 
   /* SEARCH ZONE */
+
+  .bar-search {
+    width: 100%;
+  }
 
   .Search-And-Filter {
     display: flex;
@@ -506,7 +511,6 @@ footer a:hover {
   }
 
   .Filter-Two-Buttons {
-    margin-bottom: 5%;
     flex-direction: column;
     width: 100%;
   }
